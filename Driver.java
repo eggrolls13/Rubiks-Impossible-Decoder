@@ -4,7 +4,7 @@ import java.util.Set;
 public class Driver {
 
     public static void main(String[] args) {
-        Cube realCube = new Cube(); // possible colors are w, y, r, g, b, o
+        RealCube realCube = new RealCube(); // possible colors are w, y, r, g, b, o
         realCube.e1.colors.add('w');
         realCube.e1.colors.add('r');
         realCube.e2.colors.add('w');
@@ -184,7 +184,7 @@ public class Driver {
         System.out.println(st.getNumSolutions() + " possible solutions found.");
     }
 
-    public static void testCombination(StatsTracker st, Cube realCube, ImpossibleCube icube, Set<Piece> masterSet, int a1, int a2, int a3, int a4, int a5, int a6, int a7, int a8, int a9, int a10, int a11, int a12, int c1, int c2, int c3, int c4, int c5, int c6, int c7, int c8) {
+    public static void testCombination(StatsTracker st, RealCube realCube, ImpossibleCube icube, Set<Piece> masterSet, int a1, int a2, int a3, int a4, int a5, int a6, int a7, int a8, int a9, int a10, int a11, int a12, int c1, int c2, int c3, int c4, int c5, int c6, int c7, int c8) {
         Set<Piece> testSet = new HashSet<>();
         testSet.add(icube.e1options.get(a1));
         testSet.add(icube.e2options.get(a2));

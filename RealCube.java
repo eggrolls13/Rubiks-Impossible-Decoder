@@ -1,4 +1,4 @@
-public class Cube {
+public class RealCube {
 
     public Edge e1 = new Edge();
     public Edge e2 = new Edge();
